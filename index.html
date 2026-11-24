@@ -1,120 +1,15 @@
 <!doctype html>
-<html lang="en" data-type="software">
+<html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>AWG calculator for electricians</title>
-<meta name="description" content="Convert AWG wire gauge to mm2 and back, from 4/0 to 40. 12 AWG is 3.309 mm2. The Android app works offline.">
-<meta name="page-type" content="software">
-<meta name="site-kind" content="software">
-<meta property="og:type" content="website">
-<meta property="og:title" content="AWG calculator for electricians">
-<meta property="og:description" content="12 AWG is 3.309 mm2. Convert AWG to mm2 and back from 4/0 to 40. Works offline on Android.">
-<meta property="og:image" content="https://yaroshvital.github.io/img/converter.jpg">
-<meta property="og:url" content="https://yaroshvital.github.io/">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#070D18">
-<link rel="canonical" href="https://yaroshvital.github.io/">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AWG to mm2 calculator</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://yaroshvital.github.io/awgtomm2/">
+<meta http-equiv="refresh" content="0; url=/awgtomm2/">
+<script>location.replace("/awgtomm2/");</script>
 </head>
 <body>
-<a class="skip" href="#top">Skip to content</a>
-<header class="nav">
-  <div class="wrap nav__row">
-    <a class="wordmark" href="#top">AWG mm²</a>
-    <a class="btn" href="https://play.google.com/store/apps/details?id=com.vitstudio.awg_calculator">Get the Android app</a>
-  </div>
-</header>
-<main id="top">
-  <section class="hero wrap" aria-labelledby="hero-title">
-    <div class="hero__copy">
-      <h1 id="hero-title">AWG calculator for electricians</h1>
-      <p>Convert AWG wire gauge to mm² and back, from 4/0 to 40. 12 AWG is 3.309 mm². The calculator works offline.</p>
-      <a class="btn" href="https://play.google.com/store/apps/details?id=com.vitstudio.awg_calculator">Get the Android app</a>
-    </div>
-    <form class="panel" id="calc" action="#calc">
-      <div class="switch" role="group" aria-label="Conversion direction">
-        <button type="button" id="mode-awg" aria-pressed="true">AWG to mm²</button>
-        <button type="button" id="mode-metric" aria-pressed="false">mm² to AWG</button>
-      </div>
-      <div id="awg-controls">
-        <p class="gauge" id="gauge-name">12 AWG</p>
-        <div class="stepper">
-          <button type="button" id="thinner" aria-label="Thinner gauge">−</button>
-          <button type="button" id="thicker" aria-label="Thicker gauge">+</button>
-        </div>
-      </div>
-      <div id="metric-controls" hidden>
-        <label for="metric">Square millimetres</label>
-        <input id="metric" name="metric" inputmode="decimal" autocomplete="off" value="3.309">
-      </div>
-      <p class="result" id="area">3.309 mm²</p>
-      <dl class="facts">
-        <div><dt>Diameter</dt><dd id="diameter">2.053 mm</dd></div>
-        <div><dt>Inches</dt><dd id="inches">0.0808 in</dd></div>
-        <div><dt>Circular mils</dt><dd id="mils">6,530</dd></div>
-      </dl>
-      <p class="note" id="match" hidden></p>
-    </form>
-  </section>
-
-  <section class="band" aria-labelledby="metal-title">
-    <div class="wrap split">
-      <div>
-        <h2 id="metal-title">Metal cross-section</h2>
-        <p>AWG is the metal cross-section, not the outside diameter of an insulated cable and not the outside diameter of a strand bundle.</p>
-      </div>
-      <img src="img/converter.jpg" width="390" height="844" alt="The Android converter showing 12 AWG as 3.309 mm²">
-    </div>
-  </section>
-
-  <section class="wrap price" aria-labelledby="price-title">
-    <h2 id="price-title">One price</h2>
-    <div class="price__grid">
-      <article>
-        <h3>Calculator and scale</h3>
-        <p class="sum">Free</p>
-        <p>Both directions, and the gauge scale from 4/0 to 40, stay on the phone with no account.</p>
-      </article>
-      <article>
-        <h3>Pro tools</h3>
-        <p class="sum">$4.99 once</p>
-        <p>Favorites, labeled pairs, compare, a nearest IEC nominal, share text, ohms per metre, metal mass, voltage drop, and the PUE current handbook. It does not pick a wire for a load.</p>
-      </article>
-    </div>
-  </section>
-
-  <section class="band" aria-labelledby="screens-title">
-    <div class="wrap">
-      <h2 id="screens-title">Gauge, compare, and the line</h2>
-      <div class="shots">
-        <img src="img/scale.jpg" width="390" height="844" alt="The gauge scale from 4/0 to 40">
-        <img src="img/compare.jpg" width="390" height="844" alt="Two gauges compared on one screen">
-        <img src="img/line.jpg" width="390" height="844" alt="Resistance, mass, and voltage drop for one gauge">
-      </div>
-    </div>
-  </section>
-
-  <section class="wrap close" aria-labelledby="close-title">
-    <h2 id="close-title">The Android app</h2>
-    <p>Version 1.0.0 is on Google Play. A rewarded video can open Pro tools for 10 minutes, up to 3 times a day, and does not replace the purchase.</p>
-    <a class="btn" href="https://play.google.com/store/apps/details?id=com.vitstudio.awg_calculator">Get the Android app</a>
-  </section>
-
-  <section class="wrap legal" id="privacy" aria-labelledby="privacy-title">
-    <h2 id="privacy-title">Privacy</h2>
-    <p>The conversion runs on the phone. The app uses Firebase Analytics and Crashlytics, and it shows Yandex ads. There is no account to delete.</p>
-  </section>
-</main>
-<footer class="wrap foot">
-  <p>vitstudio, Minsk, 2026</p>
-  <a href="#privacy">Privacy</a>
-  <a href="mailto:yarash.vital@gmail.com">Email vitstudio</a>
-</footer>
-<script src="calc.js"></script>
+<p><a href="/awgtomm2/">AWG to mm2 calculator for electricians</a></p>
 </body>
 </html>

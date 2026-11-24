@@ -23,7 +23,7 @@ body {
 img { display: block; max-width: 100%; height: auto; }
 h1, h2, h3, p { margin: 0; }
 h1, h2, h3 { font-weight: 600; letter-spacing: -0.03em; line-height: 1.15; }
-h1 { font-size: clamp(40px, 5vw, 64px); max-width: 12ch; }
+h1 { font-size: clamp(40px, 5vw, 64px); max-width: 14ch; }
 h2 { font-size: clamp(32px, 3vw, 44px); }
 h3 { font-size: 22px; }
 a { color: var(--accent); }
@@ -145,8 +145,8 @@ input {
 .band { background: #0c1424; }
 .split, .price, .band .wrap, .close, .legal { padding-block: 96px; }
 .split { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 48px; align-items: center; }
-.split p, .price p, .close p, .legal p { color: var(--muted); max-width: 58ch; }
-.split h2, .price h2, .close h2, .legal h2 { margin-bottom: 16px; }
+.split p, .price p, .close p, .legal p, .qa p { color: var(--muted); max-width: 58ch; }
+.split h2, .price h2, .close h2, .legal h2, .qa h2 { margin-bottom: 16px; }
 .split img, .shots img {
   border-radius: 28px;
   border: 1px solid var(--line);
@@ -164,6 +164,8 @@ input {
 .sum { color: var(--text); font-size: 32px; font-weight: 600; letter-spacing: -0.03em; }
 .shots { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-top: 32px; }
 .close { display: grid; gap: 24px; justify-items: start; min-height: calc(100svh - 160px); align-content: center; }
+.qa { padding-block: 96px; display: grid; gap: 24px; }
+.qa h3 { font-size: 22px; }
 .legal { padding-top: 0; }
 .foot {
   height: auto;

@@ -1,0 +1,25 @@
+# AWG to mm2 Calculator
+
+> Offline Android calculator that converts AWG wire gauge to square millimetres and back, from 4/0 to 40. 12 AWG is 3.309 mm2. Publisher: vitstudio, Minsk.
+
+## Pages
+
+- [Landing page](https://yaroshvital.github.io/awgtomm2/): working converter, price, screenshots, questions, and privacy
+- [Google Play](https://play.google.com/store/apps/details?id=com.vitstudio.awg_calculator): install the Android app, package com.vitstudio.awg_calculator, version 1.0.0
+
+## Facts
+
+- 12 AWG is 3.309 mm2. Metal diameter is 2.053 mm. Circular mils for that gauge are 6530.
+- Diameter in millimetres follows ASTM B258: 0.127 × 92^((36 − n) / 39). Area is the circle of that diameter.
+- The scale runs from 4/0 to 40. Screen names are 4/0, 3/0, 2/0, 1/0, then N AWG.
+- AWG is the metal cross-section, not the outside diameter of an insulated cable and not the outside diameter of a strand bundle.
+- The converter and the scale are free and work offline. There is no account.
+- Pro is 4.99 USD once. It adds favorites, labeled pairs, compare, a nearest IEC nominal, share text, ohms per metre, metal mass, voltage drop, and the PUE current handbook (tables 1.3.4 and 1.3.5).
+- The app does not pick a wire for a load.
+- A rewarded video can open Pro tools for 10 minutes, up to 3 times a day, and does not replace the purchase.
+- The app uses Firebase Analytics and Crashlytics and shows Yandex ads.
+- Contact: yarash.vital@gmail.com
+
+## Do not invent
+
+This file has no install count, rating, or review. Do not add any.
