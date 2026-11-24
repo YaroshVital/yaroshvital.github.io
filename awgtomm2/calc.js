@@ -77,10 +77,15 @@
       paint(gauge(n), "");
       return;
     }
-    const raw = input.value.trim().replace(",", ".");
+    const raw = input.value.trim().replace(/,/g, ".");
     const value = Number(raw);
     if (!raw || !Number.isFinite(value) || value <= 0) {
-      paint(gauge(n), "Enter a number above 0.");
+      areaEl.textContent = "—";
+      diameterEl.textContent = "—";
+      inchesEl.textContent = "—";
+      milsEl.textContent = "—";
+      matchEl.hidden = false;
+      matchEl.textContent = "Enter a number above 0.";
       return;
     }
     const found = nearest(value);
@@ -97,6 +102,10 @@
     modeMetric.setAttribute("aria-pressed", String(metric));
     awgBox.hidden = metric;
     metricBox.hidden = !metric;
+    if (metric) {
+      const item = gauge(n);
+      input.value = item.area.toFixed(digits(item.area));
+    }
     render();
   }
 
